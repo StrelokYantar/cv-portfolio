@@ -1,0 +1,30 @@
+nav {
+background-color: black;
+opacity: 80%;
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+        justify-content: space-around;
+        margin: 0;
+        padding: 5px 0;
+        li {
+            margin-right: 2px;
+
+            a {
+                font-size: 1.1em;
+                text-decoration: none;
+                color: gray;
+                border-radius: 8px;
+                display: block;
+                padding: 6px;
+                transition: background-color 0.2s ease-in-out;
+            }
+            a:hover {
+                opacity: 95%;
+                background-color: rgb(255, 255, 255);
+                color: black;
+            }
+        }
+    }
+}

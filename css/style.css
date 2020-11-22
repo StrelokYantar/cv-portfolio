@@ -1,0 +1,147 @@
+/** base **/
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, #dadada 0%, #9e9e9e 35%, white 100%);
+  font-family: "Roboto", sans-serif; }
+
+.box {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.349);
+  border-radius: 5px; }
+
+section {
+  padding: 40px 0; }
+
+/** layouts/footer **/
+.footer {
+  border: 2px solid black;
+  background-color: #3d4d2e;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  font-weight: lighter; }
+
+/** layouts/header **/
+nav {
+  background-color: black;
+  opacity: 80%; }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 5px 0; }
+    nav ul li {
+      margin-right: 2px; }
+      nav ul li a {
+        font-size: 1.1em;
+        text-decoration: none;
+        color: gray;
+        border-radius: 8px;
+        display: block;
+        padding: 6px;
+        transition: background-color 0.2s ease-in-out; }
+      nav ul li a:hover {
+        opacity: 95%;
+        background-color: white;
+        color: black; }
+
+/** layouts/button **/
+.button a {
+  display: inline-block;
+  width: 75px;
+  line-height: 25px;
+  text-align: center;
+  background-image: linear-gradient(white, black);
+  text-decoration: none;
+  border-radius: 8px;
+  color: black;
+  padding: 3px;
+  margin: 15px auto; }
+
+/** layouts/appl **/
+p .appl {
+  text-align: right; }
+
+/** layouts/container **/
+.container-main {
+  margin: 40px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .container-main .box p {
+    font-size: 14px; }
+
+@media screen and (min-width: 600px) {
+  .container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .container-main .left {
+      width: 48%; }
+    .container-main .right {
+      width: 48%; }
+  .container-form .box_form {
+    padding: 40px 0;
+    width: 100%; } }
+
+/** layouts/skill **/
+.skill {
+  margin-top: 20px;
+  padding-bottom: 20px; }
+  .skill .skill_images {
+    display: flex;
+    justify-content: space-around; }
+    .skill .skill_images .icon_x1 {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px; }
+    .skill .skill_images .icon_x1-5 {
+      height: 60px; }
+
+/** layouts/production **/
+.production {
+  margin-top: 20px;
+  padding-bottom: 20px; }
+  .production img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 50%; }
+
+/** layouts/production **/
+.presentation {
+  padding: 0 20px; }
+
+.section-contact {
+  text-align: center; }
+  .section-contact .container-form {
+    width: 80%;
+    margin: 0 auto; }
+    .section-contact .container-form .form_box {
+      padding: 10px 0; }
+      .section-contact .container-form .form_box label {
+        display: block;
+        padding: 20px 0; }
+      .section-contact .container-form .form_box .form_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%; }
+        .section-contact .container-form .form_box .form_content .input {
+          text-align: center;
+          margin: 10px 0;
+          width: 100%; }
+        .section-contact .container-form .form_box .form_content textarea {
+          width: 100%;
+          max-width: 215px;
+          height: 40px;
+          resize: none;
+          padding-top: 5px;
+          padding-left: 10px; }
+      .section-contact .container-form .form_box button {
+        display: inline-block;
+        margin-top: 15px; }
